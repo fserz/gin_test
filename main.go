@@ -33,6 +33,7 @@ func main() {
 		c.JSON(http.StatusOK, gin.H{
 			"method": "GET",
 		})
+		//c.HTML()
 	})
 	r.POST("/book", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{
